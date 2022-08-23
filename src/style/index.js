@@ -12,7 +12,21 @@ export default StyleSheet.create({
         height: width / 2
     },
     listView: {
-        flexDirection: 'row',
-        flexWrap: 'wrap'
+        // flexDirection: 'row',
+        // flexWrap: 'wrap'
+    },
+    header: {
+        width, 
+        height: 100,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    dropdown: {
+        // width: width - 40
+    },
+    breed: {
+        width: width,
+        height: height - 100,
+        resizeMode: 'contain'
     }
 })
