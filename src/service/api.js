@@ -9,15 +9,14 @@ export function useApi() {
                 "Content-Type": "application/json",
             }
         });
-        console.log(result)
         const data = await result.json();
         return { data }
     }
     
 
     return {
-        async getImages(limit=10, page=1) {
-            const { data } = await GET(`v1/images/search?limit=${limit}&page=${page}`);
+        async getImages(page=1) {
+            const { data } = await GET(`v1/images/search?limit=10&page=${page}`);
             return data
         },
     }
